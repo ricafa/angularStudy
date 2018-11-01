@@ -1,4 +1,4 @@
-<section>
+<!-- <section>
   <article>
     <h3>Interpolation String</h3>
     <p>Accessed from {{url}}</p>
@@ -8,4 +8,22 @@
     02<img [src]='urlImagem' [alt]='url'/>
   </article>
 
+</section>
+-->
+<section>
+  <article>
+    <h3>CSS Style e Class</h3>
+    <div>
+      Selecione uma classe 
+      <select #classe (change)="0">
+          <option value="alert-success">Sucess</option>
+          <option value="alert-info">Info</option>
+          <option value="alert-warning">Warning</option>
+          <option value="alert-danger">Danger</option>
+      </select>
+
+      <p class="alert" [class]="classe.value">Aqui temos a cor.</p>
+
+    </div>
+  </article>
 </section>

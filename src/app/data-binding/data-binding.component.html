@@ -10,6 +10,7 @@
 
 </section>
 -->
+<!--
 <section>
   <article>
     <h3>CSS Style e Class</h3>
@@ -24,6 +25,20 @@
 
       <p class="alert" [class]="classe.value">Aqui temos a cor.</p>
 
+    </div>
+  </article>
+</section>
+-->
+
+<section>
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button class="btn btn-primary" (click)="clique()">Clique me</button>
+      <input type="text"
+      (keyup)="onKeyUp($event)"
+      >
+      <label>{{valorAtual}}</label>
     </div>
   </article>
 </section>

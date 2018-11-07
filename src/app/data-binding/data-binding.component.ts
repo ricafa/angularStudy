@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
   url: String  = 'www.google.com.br' ;
 
+  nomeDoCurso: String = 'Angular';
+
   cursoAngular = true;
 
   valorAtual: String = '';

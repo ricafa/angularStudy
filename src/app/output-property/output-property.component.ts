@@ -7,6 +7,7 @@ import { Component, OnInit, Input, EventEmitter, Output, ViewChild, ElementRef }
 })
 export class OutputPropertyComponent implements OnInit {
 
+  
   @Input() valor = 0;
 
   @Output() mudouValor = new EventEmitter();

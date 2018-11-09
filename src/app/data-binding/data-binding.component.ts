@@ -14,6 +14,8 @@ export class DataBindingComponent implements OnInit {
 
   valorAtual: String = '';
 
+  valorInicial = 10;
+
   urlImagem: String = 'https://picsum.photos/200/300';
 
 
@@ -32,6 +34,11 @@ export class DataBindingComponent implements OnInit {
     if (evento.key === '5') {
       console.log('você digitou o numero 5');
     }
+  }
+
+  onMudouValor(event) {
+    console.log(event);
+    console.log(event.novoValor);
   }
 
   constructor() {}
